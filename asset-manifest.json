@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/Coptic-Meetings/static/js/main.42cc6258.js",
+    "main.js": "/Coptic-Meetings/static/js/main.d1652366.js",
     "static/js/496.c8bc0447.chunk.js": "/Coptic-Meetings/static/js/496.c8bc0447.chunk.js",
     "index.html": "/Coptic-Meetings/index.html",
-    "main.42cc6258.js.map": "/Coptic-Meetings/static/js/main.42cc6258.js.map",
+    "main.d1652366.js.map": "/Coptic-Meetings/static/js/main.d1652366.js.map",
     "496.c8bc0447.chunk.js.map": "/Coptic-Meetings/static/js/496.c8bc0447.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.42cc6258.js"
+    "static/js/main.d1652366.js"
   ]
 }
