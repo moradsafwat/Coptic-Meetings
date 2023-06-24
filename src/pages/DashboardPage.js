@@ -20,7 +20,7 @@ import {
 
 // ----------------------------------------------------------------------
 
-export default function DashboardAppPage() {
+export default function DashboardPage() {
   const theme = useTheme();
 
   return (
