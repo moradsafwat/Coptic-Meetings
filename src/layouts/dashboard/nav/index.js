@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 // @mui
 import { styled, alpha } from '@mui/material/styles';
 import { Box, Link, Button, Drawer, Typography, Avatar, Stack } from '@mui/material';
@@ -14,11 +14,9 @@ import Scrollbar from '../../../components/scrollbar';
 import NavSection from '../../../components/nav-section';
 //
 import navConfig from './config';
-
 // ----------------------------------------------------------------------
 
 const NAV_WIDTH = 280;
-
 const StyledAccount = styled('div')(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
@@ -36,7 +34,6 @@ Nav.propTypes = {
 
 export default function Nav({ openNav, onCloseNav }) {
   const { pathname } = useLocation();
-
   const isDesktop = useResponsive('up', 'lg');
 
   useEffect(() => {
@@ -86,7 +83,7 @@ export default function Nav({ openNav, onCloseNav }) {
             src={`${process.env.PUBLIC_URL}/assets/images/avaMinaLogo.png`}
             sx={{ width: 100, position: 'absolute', top: -50 }}
           />
-          <Button href="#" target="_blank" variant="contained">
+          <Button to="/login" variant="contained" component={RouterLink}>
             Log out
           </Button>
         </Stack>

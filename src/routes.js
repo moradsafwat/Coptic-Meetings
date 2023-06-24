@@ -23,12 +23,27 @@ export default function Router() {
         { path: 'ChildrenClass', element: <ChildrenClassPage /> },
         { path: 'products', element: <ProductsPage /> },
         { path: 'blog', element: <BlogPage /> },
-        { path: '*', element: <Page404 /> },
       ],
     },
     {
       path: 'login',
       element: <LoginPage />,
+    },
+    {
+      path: '/',
+      element: <Navigate to="/dashboard/app" replace />,
+    },
+    {
+      element: <SimpleLayout />,
+      children: [
+        { element: <Navigate to="/dashboard/app" />, index: true },
+        { path: '404', element: <Page404 /> },
+        { path: '*', element: <Navigate to="/404" /> },
+      ],
+    },
+    {
+      path: '*',
+      element: <Navigate to="/404" replace />,
     },
   ]);
 

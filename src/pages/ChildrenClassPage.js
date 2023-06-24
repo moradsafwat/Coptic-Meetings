@@ -185,7 +185,7 @@ export default function ChildrenClassPage() {
                     return (
                       <TableRow hover key={id} tabIndex={-1} role="checkbox" selected={selectedUser}>
                         <TableCell padding="checkbox">
-                          <Checkbox checked={selectedUser} onChange={(event) => handleClick(event, name)} />
+                          {/* <Checkbox checked={selectedUser} onChange={(event) => handleClick(event, name)} /> */}
                         </TableCell>
 
                         <TableCell component="th" scope="row" padding="none">

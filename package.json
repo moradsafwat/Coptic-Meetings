@@ -1,8 +1,8 @@
 {
   "homepage": "https://moradsafwat.github.io/Coptic-Meetings",
-  "name": "@minimal/material-kit-react",
-  "author": "minimals.cc",
-  "licence": "MIT",
+  "name": "@StMary/Coptic-Meetings-react",
+  "author": "moradSafwat.cc",
+  "licence": "Morad",
   "version": "1.7.0",
   "private": false,
   "scripts": {
@@ -48,6 +48,7 @@
     "@mui/lab": "^5.0.0-alpha.103",
     "@mui/material": "^5.11.10",
     "apexcharts": "^3.37.0",
+    "axios": "^1.4.0",
     "change-case": "^4.1.2",
     "date-fns": "^2.29.3",
     "gh-pages": "^5.0.0",
@@ -63,6 +64,7 @@
     "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",
     "simplebar-react": "^3.2.1",
+    "sweetalert2": "^11.7.12",
     "web-vitals": "^3.1.1"
   },
   "devDependencies": {
